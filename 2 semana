@@ -1,0 +1,111 @@
+# Función para convertir metros a pulgadas
+def metros_a_pulgadas(metros):
+    pulgadas = metros / 0.0254
+    return pulgadas
+
+# Leer la cantidad de metros
+metros = float(input("Introduce la cantidad de metros: "))
+
+# Convertir metros a pulgadas
+pulgadas = metros_a_pulgadas(metros)
+
+# Mostrar el resultado
+print(f"Necesitas {pulgadas:.2f} pulgadas de tela.")
+
+Inicio
+   |
+   v
+Leer cantidad de metros
+   |
+   v
+Llamar a metros_a_pulgadas(metros)
+   |
+   v
+Calcular pulgadas
+   |
+   v
+Retornar pulgadas
+   |
+   v
+Mostrar el resultado
+   |
+   v
+   Fin
+
+
+
+# Función para calcular el pago por el consumo de agua
+def calcular_pago(longitud, ancho, profundidad, tarifa):
+    # Calcular el volumen en metros cúbicos
+    volumen = longitud * ancho * profundidad
+    # Calcular el total a pagar
+    pago = volumen * tarifa
+    return pago
+
+# Leer las dimensiones de la alberca y la tarifa
+longitud = float(input("Introduce la longitud de la alberca en metros: "))
+ancho = float(input("Introduce el ancho de la alberca en metros: "))
+profundidad = float(input("Introduce la profundidad de la alberca en metros: "))
+tarifa = float(input("Introduce la tarifa por metro cúbico de agua: "))
+
+# Calcular el pago
+total_pago = calcular_pago(longitud, ancho, profundidad, tarifa)
+
+# Mostrar el total a pagar
+print(f"El total a pagar por el consumo de agua es: ${total_pago:.2f}")
+
+Inicio
+   |
+   v
+Leer longitud, ancho, profundidad, tarifa
+   |
+   v
+Llamar a calcular_pago(longitud, ancho, profundidad, tarifa)
+   |
+   v
+Calcular volumen = longitud * ancho * profundidad
+   |
+   v
+Calcular pago = volumen * tarifa
+   |
+   v
+Retornar pago
+   |
+   v
+Mostrar el total a pagar
+   |
+   v
+   Fin
+
+
+
+
+# Leer dos valores proporcionados por el usuario
+valor1 = float(input("Introduce el primer valor: "))
+valor2 = float(input("Introduce el segundo valor: "))
+
+# Determinar cuál de los dos valores es mayor
+if valor1 > valor2:
+    print("El primer valor es mayor que el segundo valor.")
+else:
+    print("El segundo valor es mayor que el primer valor.")
+
+Inicio
+   |
+   v
+Leer valor1
+   |
+   v
+Leer valor2
+   |
+   v
+valor1 > valor2?
+  /  \
+Sí    No
+ |      |
+ v      v
+Mostrar "El primer valor es mayor que el segundo valor."
+        Mostrar "El segundo valor es mayor que el primer valor."
+   |
+   v
+   Fin
